@@ -1,0 +1,29 @@
+modules:
+  macro:
+    - key: forge-petfinder-macro-hello-world-macro
+      resource: main
+      render: native
+      resolver:
+        function: resolver
+      title: forge-petfinder-macro
+      config: true
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/7a914920-8f77-4432-92e7-99be57a48e70
+permissions:
+  scopes: []
+  external: 
+    images:
+      - dbw3zep4prcju.cloudfront.net
+      - dl5zpyw5k3jeb.cloudfront.net
+      - i.imgur.com
+    fetch:
+      backend:
+       - api.petfinder.com
