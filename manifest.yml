@@ -16,7 +16,7 @@ resources:
 app:
   runtime:
     name: nodejs18.x
-  id: ari:cloud:ecosystem::app/7a914920-8f77-4432-92e7-99be57a48e70
+  id: <REPLACE ME BY RUNNING forge register>
 permissions:
   scopes: []
   external: 
